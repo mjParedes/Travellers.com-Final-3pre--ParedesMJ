@@ -1,0 +1,42 @@
+//PAGE MEDIA
+
+.grid-container {
+    main {
+        .portada-media {
+            img {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 40px;
+
+                #carrusel-1,
+                #carrusel-2 {
+                    margin-top: 50px;
+                    font-weight: bolder;
+                }
+
+            }
+        }
+    }
+}
+
+.grid-container{
+    section{
+        width: 100%;
+
+        .vid-flex{
+            @include flex(flex,column, nowrap, center, center);
+
+            div{
+                flex: 45%;
+                img{
+                    display: none;
+                }
+            }
+
+            iframe{
+                flex:45% ;
+            }
+
+        }
+    }
+}
